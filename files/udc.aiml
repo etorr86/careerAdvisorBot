@@ -2,11 +2,32 @@
 <aiml>
   <category>
     <pattern>*</pattern>
-    <template>I have no answer for that.</template>
+    <template>I don't understand what you are trying to say, try again by enter Begin or Quit.</template>
   </category>
   
   <category>
-      <pattern>Hello bot</pattern>
-      <template>Hello World!</template>
+      <pattern>Hello</pattern>
+      <template><srai>HI</srai></template>
+  </category>
+  
+  <category>
+      <pattern>HI</pattern>
+      <template>
+          <random>
+              <li>Hi, </li>
+              <li>Hello there, </li>
+              <li>Good to see you, </li>
+              <li>Hey there, </li>
+          </random>
+          Welcome to WGU Advisor Service. What would you like to do?
+          <button>
+              <text>Take Quiz</text>
+              <postback>Take Quiz</postback>
+          </button>
+          <button>
+              <text>See Careers</text>
+              <postback>Show Careers</postback>
+          </button>
+      </template>
   </category>
 </aiml>

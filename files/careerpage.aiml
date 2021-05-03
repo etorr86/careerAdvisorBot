@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	<category>
+	    <pattern>Show Careers</pattern>
+	    <template>
+	        Welcome to the Career Page.
+	        This are the top <bot name="year"/> 5 Careers in the IT World that we recomend.
+	        <carousel>
+	            <card>
+	            <image></image>
+	            <title>Software Developers</title>
+	            <subtitle>Ranqued number one in the Best Technology Jobs by the USNews</subtitle>
+	            <button>
+	                <text>Read More...</text>
+	                <postback></postback>
+                </button>
+                </card>
+                <card>
+	            <image></image>
+	            <title>Business Analyst</title>
+	            <subtitle>They are the bridge between developers and business</subtitle>
+	            <button>
+	                <text>Read More...</text>
+	                <postback></postback>
+                </button>
+                </card>
+                <card>
+	            <image></image>
+	            <title>Database Administrators</title>
+	            <subtitle>Blahhhhhh</subtitle>
+	            <button>
+	                <text>Read More...</text>
+	                <postback></postback>
+                </button>
+                </card>
+                <card>
+	            <image></image>
+	            <title>Security Analyst</title>
+	            <subtitle>need more here</subtitle>
+	            <button>
+	                <text>Read More...</text>
+	                <postback></postback>
+                </button>
+                </card>
+                <card>
+	            <image></image>
+	            <title>Data Scientist</title>
+	            <subtitle>Same with this</subtitle>
+	            <button>
+	                <text>Read More...</text>
+	                <postback></postback>
+                </button>
+                </card>
+            </carousel>
+	    </template>
+    </category>
+</aiml>

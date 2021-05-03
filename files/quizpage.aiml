@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>Take Quiz</pattern>
+	    <template>I'm glad you decided to take our quiz!, to start please can get your name?</template>
+    </category>
+    
+    <category>
+        <pattern>*</pattern>
+        <that>I'm glad you decided to take our quiz!, to start please can get your name?</that>
+        <template>Thank you</template>
+    </category>
+</aiml>
