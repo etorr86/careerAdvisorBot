@@ -19,7 +19,7 @@
                 <card>
 	            <image>https://live.staticflickr.com/65535/48341586902_844b857bfd_4k.jpg</image>
 	            <title>Business Analyst</title>
-	            <subtitle>The role of a systems analyst can be defined as a bridge between the business problems and the technology solutions.</subtitle>
+	            <subtitle>Business analyst can be defined as a bridge between the business problems and the technology solutions.</subtitle>
 	            <button>
 	                <text>Read More...</text>
 	                <postback>Business Analyst</postback>
@@ -28,7 +28,7 @@
                 <card>
 	            <image>https://cdn.pixabay.com/photo/2016/12/09/18/30/database-schema-1895779_1280.png</image>
 	            <title>Database Administrators</title>
-	            <subtitle>DBAs set up databases according to a company's needs and make sure they operate efficiently.</subtitle>
+	            <subtitle>DBAs set up databases according to a company's needs.</subtitle>
 	            <button>
 	                <text>Read More...</text>
 	                <postback>databaseadmin</postback>
@@ -37,7 +37,7 @@
                 <card>
 	            <image>https://cdn.pixabay.com/photo/2015/12/08/19/08/castle-1083570_1280.png</image>
 	            <title>Security Analyst</title>
-	            <subtitle>Monitor their organization’s networks for security breaches and investigate a violation when one occurs.</subtitle>
+	            <subtitle>Monitor their organization’s networks for security breaches</subtitle>
 	            <button>
 	                <text>Read More...</text>
 	                <postback>Security Analyst</postback>

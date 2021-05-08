@@ -4,17 +4,20 @@
 	<category>
 	    <pattern>Software Developer</pattern>
 	    <template>
-	        <card>
-	            <image>https://www.picpedia.org/highway-signs/images/software-developer.jpg</image>
-	            <title>Software Developer</title>
-	            <subtitle>
-	                Software developers create the applications or systems that run on a computer or another device.
-	            </subtitle>
-                <button>
-                    <text>Read More...</text>
-                    <url>https://www.rasmussen.edu/degrees/technology/blog/what-does-software-developer-do/</url>
+	            Software developers create the applications or systems that run on a computer or another device.<br/>
+	            They Analyze users’ needs and then design, test, and develop software to meet those needs
+	            <split/>
+	            Some of their duties are: 
+	            <ul>
+	                <li>Design each piece of an application or system and plan how the pieces will work together</li>
+	                <li>Ensure that a program continues to function normally through software maintenance and testing</li>
+	                <li>Document every aspect of an application or system as a reference for future maintenance and upgrades</li>
+	                <li>Collaborate with other computer specialists to create optimum software</li>
+                </ul>
+	            <button>
+	                <text>Read More...</text>
+	                <url>https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm#tab-1</url>
                 </button>
-            </card>
 	    </template>
     </category>
 </aiml>

@@ -3,16 +3,19 @@
 	<!-- insert your AIML categories here -->
 		<category>
 	    <pattern>Business Analyst</pattern>
-	    <template>
-	        <card>
-	            <image>https://live.staticflickr.com/65535/48341586902_844b857bfd_4k.jpg</image>
-	            <title>Business Analyst</title>
-	            <subtitle>Business analysts evaluate past and current business data with the primary goal of improving decision-making processes within organizations.</subtitle>
+	     <template>
+	            Business analysts evaluate past and current business data with the primary goal of improving decision-making processes within organizations.
+	            <split/>
+	            Some of their duties are:
+	            <ul>
+	                <li>Understanding what a business does, including most significantly, the processes through which they accomplish their work.</li>
+	                <li>Evaluating those processes for efficiency, cost, and results.</li>
+	                <li>Compiling recommendations for the company on process adjustments, new potentially impactful technologies, or other areas for improvement.</li>
+                </ul>
 	            <button>
 	                <text>Read More...</text>
-	                <postback>https://www.northeastern.edu/graduate/blog/what-does-a-business-analyst-do</postback>
+	                <url>https://www.northeastern.edu/graduate/blog/what-does-a-business-analyst-do</url>
                 </button>
-            </card>
 	    </template>
     </category>
 </aiml>

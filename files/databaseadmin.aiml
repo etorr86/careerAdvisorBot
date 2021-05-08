@@ -4,15 +4,19 @@
 	<category>
 	    <pattern>databaseadmin</pattern>
 	    <template>
-	        <card>
-	            <image>https://cdn.pixabay.com/photo/2016/12/09/18/30/database-schema-1895779_1280.png</image>
-	            <title>Database Administrators</title>
-	            <subtitle>Database administrators (DBAs) use specialized software to store and organize data.</subtitle>
+	            Database administrators use specialized software to store and organize data, such as financial information and customer shipping records. They make sure that data are available to users and secure from unauthorized access.
+	            <split/>
+	            Some of their duties are: 
+	            <ul>
+	                <li>Ensure that organizational data are secure</li>
+	                <li>Back up and restore data to prevent data loss</li>
+	                <li>Identify user needs to create and administer databases</li>
+	                <li>Make and test modifications to database structure when needed</li>
+                </ul>
 	            <button>
 	                <text>Read More...</text>
-	                <postback>https://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm</postback>
+	                <url>https://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm#tab-1</url>
                 </button>
-            </card>
 	    </template>
     </category>
 </aiml>

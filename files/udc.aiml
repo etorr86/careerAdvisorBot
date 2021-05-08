@@ -2,7 +2,7 @@
 <aiml>
   <category>
     <pattern>*</pattern>
-    <template>I don't understand what you are trying to say, try again by enter Begin or Quit.</template>
+    <template>I don't understand what you are trying to say, try again by enter Hello or Quit.</template>
   </category>
   
   <category>
@@ -20,9 +20,9 @@
               <li>Hey there, </li>
           </random>
           <split/>
-          Welcome to WGU IT Advisor Service. I'm here to help you chose an IT career that fits for your needs<br/>
+          Welcome to WGU IT Advisor Service. I'm here to help you chose an IT career that fits your needs<br/>
           <split/>
-          If you want an Overview of the best Careers in IT please select See Careers.<br/>
+          If you want an Overview of the best Careers in IT, please click on See Careers button.<br/>
           If you want guidance on selecting a career path then click on Take Quiz button.
           <reply>
             <text>See Careers</text>
