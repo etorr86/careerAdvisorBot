@@ -3,6 +3,18 @@
 	<!-- insert your AIML categories here -->
 	<category>
 	    <pattern>Software Developer</pattern>
-	    <template>This is a role that uses bla bla</template>
+	    <template>
+	        <card>
+	            <image>https://www.picpedia.org/highway-signs/images/software-developer.jpg</image>
+	            <title>Software Developer</title>
+	            <subtitle>
+	                Software developers create the applications or systems that run on a computer or another device.
+	            </subtitle>
+                <button>
+                    <text>Read More...</text>
+                    <url>https://www.rasmussen.edu/degrees/technology/blog/what-does-software-developer-do/</url>
+                </button>
+            </card>
+	    </template>
     </category>
 </aiml>

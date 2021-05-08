@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 	<!-- insert your AIML categories here -->
+		<category>
+	    <pattern>Security Analyst</pattern>
+	    <template>
+	            Information security analysts plan and carry out security measures to protect an organization’s computer networks and systems.
+	            <split/>
+	            Some of their duties are:
+	            <ul>
+	                <li>Monitor their organization’s networks for security breaches and investigate a violation when one occurs</li>
+	                <li>Research the latest information technology (IT) security trends</li>
+	                <li>Develop security standards and best practices for their organization</li>
+                </ul>
+	            <button>
+	                <text>Read More...</text>
+	                <url>https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm</url>
+                </button>
+	    </template>
+    </category>
 </aiml>

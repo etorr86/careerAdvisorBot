@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>Data Scientist</pattern>
+	    <template>
+	            Data scientists work closely with business stakeholders to understand their goals and determine how data can be used to achieve those goals.
+	            <split/>
+	            Some of their duties are: 
+	            <ul>
+	                <li>Acquire data</li>
+	                <li>Process and clean the data</li>
+	                <li>Initial data investigation and exploratory data analysis</li>
+	                <li>Apply data science techniques, such as machine learning, statistical modeling, and artificial intelligence</li>
+                </ul>
+	            <button>
+	                <text>Read More...</text>
+	                <url>https://www.northeastern.edu/graduate/blog/what-does-a-data-scientist-do/</url>
+                </button>
+	    </template>
+    </category>
 </aiml>

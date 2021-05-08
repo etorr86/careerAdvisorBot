@@ -19,15 +19,19 @@
               <li>Good to see you, </li>
               <li>Hey there, </li>
           </random>
-          Welcome to WGU Advisor Service. What would you like to do?
-          <button>
+          <split/>
+          Welcome to WGU IT Advisor Service. I'm here to help you chose an IT career that fits for your needs<br/>
+          <split/>
+          If you want an Overview of the best Careers in IT please select See Careers.<br/>
+          If you want guidance on selecting a career path then click on Take Quiz button.
+          <reply>
+            <text>See Careers</text>
+            <postback>Show Careers</postback>
+          </reply>
+          <reply>
               <text>Take Quiz</text>
               <postback>Take Quiz</postback>
-          </button>
-          <button>
-              <text>See Careers</text>
-              <postback>Show Careers</postback>
-          </button>
+          </reply>
       </template>
   </category>
 </aiml>

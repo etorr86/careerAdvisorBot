@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 	<!-- insert your AIML categories here -->
+		<category>
+	    <pattern>Business Analyst</pattern>
+	    <template>
+	        <card>
+	            <image>https://live.staticflickr.com/65535/48341586902_844b857bfd_4k.jpg</image>
+	            <title>Business Analyst</title>
+	            <subtitle>Business analysts evaluate past and current business data with the primary goal of improving decision-making processes within organizations.</subtitle>
+	            <button>
+	                <text>Read More...</text>
+	                <postback>https://www.northeastern.edu/graduate/blog/what-does-a-business-analyst-do</postback>
+                </button>
+            </card>
+	    </template>
+    </category>
 </aiml>

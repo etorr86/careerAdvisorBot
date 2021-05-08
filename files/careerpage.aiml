@@ -8,48 +8,48 @@
 	        This are the top <bot name="year"/> 5 Careers in the IT World that we recomend.
 	        <carousel>
 	            <card>
-	            <image></image>
+	            <image>https://www.picpedia.org/highway-signs/images/software-developer.jpg</image>
 	            <title>Software Developers</title>
 	            <subtitle>Ranqued number one in the Best Technology Jobs by the USNews</subtitle>
 	            <button>
 	                <text>Read More...</text>
-	                <postback></postback>
+	                <postback>Software Developer</postback>
                 </button>
                 </card>
                 <card>
-	            <image></image>
+	            <image>https://live.staticflickr.com/65535/48341586902_844b857bfd_4k.jpg</image>
 	            <title>Business Analyst</title>
-	            <subtitle>They are the bridge between developers and business</subtitle>
+	            <subtitle>The role of a systems analyst can be defined as a bridge between the business problems and the technology solutions.</subtitle>
 	            <button>
 	                <text>Read More...</text>
-	                <postback></postback>
+	                <postback>Business Analyst</postback>
                 </button>
                 </card>
                 <card>
-	            <image></image>
+	            <image>https://cdn.pixabay.com/photo/2016/12/09/18/30/database-schema-1895779_1280.png</image>
 	            <title>Database Administrators</title>
-	            <subtitle>Blahhhhhh</subtitle>
+	            <subtitle>DBAs set up databases according to a company's needs and make sure they operate efficiently.</subtitle>
 	            <button>
 	                <text>Read More...</text>
-	                <postback></postback>
+	                <postback>databaseadmin</postback>
                 </button>
                 </card>
                 <card>
-	            <image></image>
+	            <image>https://cdn.pixabay.com/photo/2015/12/08/19/08/castle-1083570_1280.png</image>
 	            <title>Security Analyst</title>
-	            <subtitle>need more here</subtitle>
+	            <subtitle>Monitor their organization’s networks for security breaches and investigate a violation when one occurs.</subtitle>
 	            <button>
 	                <text>Read More...</text>
-	                <postback></postback>
+	                <postback>Security Analyst</postback>
                 </button>
                 </card>
                 <card>
-	            <image></image>
+	            <image>https://upload.wikimedia.org/wikipedia/commons/4/44/DataScienceDisciplines.png</image>
 	            <title>Data Scientist</title>
-	            <subtitle>Same with this</subtitle>
+	            <subtitle>Data Scientist invent and design new approaches in computing.</subtitle>
 	            <button>
 	                <text>Read More...</text>
-	                <postback></postback>
+	                <postback>Data Scientist</postback>
                 </button>
                 </card>
             </carousel>

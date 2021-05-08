@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>databaseadmin</pattern>
+	    <template>
+	        <card>
+	            <image>https://cdn.pixabay.com/photo/2016/12/09/18/30/database-schema-1895779_1280.png</image>
+	            <title>Database Administrators</title>
+	            <subtitle>Database administrators (DBAs) use specialized software to store and organize data.</subtitle>
+	            <button>
+	                <text>Read More...</text>
+	                <postback>https://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm</postback>
+                </button>
+            </card>
+	    </template>
+    </category>
 </aiml>
