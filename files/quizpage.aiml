@@ -3,12 +3,176 @@
 	<!-- insert your AIML categories here -->
 	<category>
 	    <pattern>Take Quiz</pattern>
-	    <template>I'm glad you decided to take our quiz!, to start please can get your name?</template>
+	    <template>
+	        I'm glad you decided to take our quiz!
+	        <split/>
+	        <random>
+              <li>Let's get started with some questions., </li>
+              <li>Let's go over a couple of questions, </li>
+              <li>Follow me along by answering a few questions, </li>
+          </random>
+          <split/>
+          Do you get frustraded easily when dealing with complex problem?
+          <reply>
+              <text>I embrace new challenges and enjoy them.</text>
+              <postback>embrace</postback>
+          </reply>
+          <reply>
+              <text>I can get a bit frustraded, and I can lose confidence.</text>
+              <postback>confidence</postback>
+          </reply>
+	   </template>
     </category>
     
     <category>
-        <pattern>*</pattern>
-        <that>I'm glad you decided to take our quiz!, to start please can get your name?</that>
-        <template>Thank you</template>
+        <pattern>embrace</pattern>
+        <template>
+            <think><set name="complex">true</set></think>
+            Sweet, Do you like working with other people? 
+            <reply>
+              <text>I believe I do</text>
+              <postback>group</postback>
+          </reply>
+          <reply>
+              <text>I prefer to work alone</text>
+              <postback>alone</postback>
+          </reply>
+        </template>
     </category>
+    
+     <category>
+        <pattern>confidence</pattern>
+        <template>
+            <think><set name="complex">false</set></think>
+            ok, so what about working with other people? Do you like it?
+            <reply>
+              <text>I believe I do</text>
+              <postback>group</postback>
+          </reply>
+          <reply>
+              <text>I prefer to work alone</text>
+              <postback>alone</postback>
+          </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>group</pattern>
+        <template>
+            <think><set name="people">true</set></think>
+            What do you think about customer service?
+            <reply>
+              <text>I prefer no to be involved with customer service</text>
+              <postback>no cs</postback>
+          </reply>
+          <reply>
+              <text>I love interacting with people.</text>
+              <postback>yes cs</postback>
+          </reply>
+        </template>
+    </category>
+    
+     <category>
+        <pattern>alone</pattern>
+        <template>
+            <think><set name="people">false</set></think>
+            Do you like dealing with big amoung of data and try to make sense of it?
+            <reply>
+              <text>Yes, I like that</text>
+              <postback>final data scientist</postback>
+          </reply>
+          <reply>
+              <text>No, I don't like it</text>
+              <postback>no data</postback>
+          </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>no cs</pattern>
+        <template>
+            Do you like dealing with big amoung of data and try to make sense of it?
+            <condition name="complex" value="true">
+                <reply>
+                    <text>Yes</text>
+                    <postback>final Data Scientist</postback>
+                </reply>
+                <reply>
+                    <text>No</text>
+                    <postback>no data</postback>
+                </reply>
+            </condition>
+            <condition name="complex" value="false">
+                <reply>
+                    <text>Yes</text>
+                    <postback>final Database Administrator</postback>
+                </reply>
+                <reply>
+                    <text>No</text>
+                    <postback>no data</postback>
+                </reply>
+            </condition>
+        </template>
+    </category>
+    
+     <category>
+        <pattern>yes cs</pattern>
+        <template>
+            <srai>final Business Analyst</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>no data</pattern>
+        <template>
+            Would you be interested in working protecting a company from security breaches?
+            <split/>
+            Maybe help the company beef up their security infrastructure?
+            <reply>
+                <text>Yes, that sounds interesting</text>
+                <postback>final Security Analyst</postback>
+            </reply>
+            <reply>
+                <text>No, that's no my thing</text>
+                <postback>no security</postback>
+            </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>no security</pattern>
+        <template>
+            Last question, have you ever been interested in building things?
+            <reply>
+                <text>Yes, I always like that</text>
+                <postback>final Software Developer</postback>
+            </reply>
+            <reply>
+                <text>No</text>
+                <postback>final Business Analyst</postback>
+            </reply>
+        </template>
+    </category>
+    
+     <category>
+        <pattern>final *</pattern>
+        <template>
+            Based on the answers you have provided, you would be a great fit for a career as a <star/>.
+            <split/>
+            Would you be interested in knowing more about this career?
+            <reply>
+              <text>Yes, please.</text>
+              <postback><star/></postback>
+          </reply>
+          <reply>
+              <text>I want to start the quiz again.</text>
+              <postback>Take Quiz</postback>
+          </reply>
+          <reply>
+              <text>I'm good for now. I will go back later.</text>
+              <postback>Quit</postback>
+          </reply>
+        </template>
+    </category>
+    
 </aiml>

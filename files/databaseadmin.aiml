@@ -2,7 +2,7 @@
 <aiml version="2.0">
 	<!-- insert your AIML categories here -->
 	<category>
-	    <pattern>databaseadmin</pattern>
+	    <pattern>Database Administrator</pattern>
 	    <template>
 	            Database administrators use specialized software to store and organize data, such as financial information and customer shipping records. They make sure that data are available to users and secure from unauthorized access.
 	            <split/>
@@ -16,6 +16,10 @@
 	            <button>
 	                <text>Read More...</text>
 	                <url>https://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm#tab-1</url>
+                </button>
+                <button>
+                    <text>Go back to Careers</text>
+                    <postback>Show Careers</postback>
                 </button>
 	    </template>
     </category>

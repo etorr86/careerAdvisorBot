@@ -5,7 +5,7 @@
 	    <pattern>Show Careers</pattern>
 	    <template>
 	        Welcome to the Career Page.
-	        This are the top <bot name="year"/> 5 Careers in the IT World that we recomend.
+	        This are the top 5 Careers in the IT World that we recomend for <bot name="year"/>.
 	        <carousel>
 	            <card>
 	            <image>https://www.picpedia.org/highway-signs/images/software-developer.jpg</image>
@@ -31,7 +31,7 @@
 	            <subtitle>DBAs set up databases according to a company's needs.</subtitle>
 	            <button>
 	                <text>Read More...</text>
-	                <postback>databaseadmin</postback>
+	                <postback>Database Administrator</postback>
                 </button>
                 </card>
                 <card>
