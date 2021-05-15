@@ -5,12 +5,12 @@
 	    <pattern>Show Careers</pattern>
 	    <template>
 	        Welcome to the Career Page.
-	        This are the top 5 Careers in the IT World that we recomend for <bot name="year"/>.
+	        This are the top 5 Careers in the IT World that we recommend for <bot name="year"/>.
 	        <carousel>
 	            <card>
 	            <image>https://www.picpedia.org/highway-signs/images/software-developer.jpg</image>
 	            <title>Software Developers</title>
-	            <subtitle>Ranqued number one in the Best Technology Jobs by the USNews</subtitle>
+	            <subtitle>Ranked number one in the Best Technology Jobs by the USNews</subtitle>
 	            <button>
 	                <text>Read More...</text>
 	                <postback>Software Developer</postback>
@@ -19,7 +19,7 @@
                 <card>
 	            <image>https://live.staticflickr.com/65535/48341586902_844b857bfd_4k.jpg</image>
 	            <title>Business Analyst</title>
-	            <subtitle>Business analyst can be defined as a bridge between the business problems and the technology solutions.</subtitle>
+	            <subtitle>Business analyst can be defined as a bridge between business problems and the technology solutions.</subtitle>
 	            <button>
 	                <text>Read More...</text>
 	                <postback>Business Analyst</postback>

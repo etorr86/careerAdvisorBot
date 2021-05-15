@@ -8,10 +8,10 @@
 	            <split/>
 	            Some of their duties are: 
 	            <ul>
-	                <li>Ensure that organizational data are secure</li>
-	                <li>Back up and restore data to prevent data loss</li>
-	                <li>Identify user needs to create and administer databases</li>
-	                <li>Make and test modifications to database structure when needed</li>
+	                <li>Ensure that organizational data are secure.</li>
+	                <li>Back up and restore data to prevent data loss.</li>
+	                <li>Identify user needs to create and administer databases.</li>
+	                <li>Make and test modifications to database structure when needed.</li>
                 </ul>
 	            <button>
 	                <text>Read More...</text>

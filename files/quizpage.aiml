@@ -4,38 +4,39 @@
 	<category>
 	    <pattern>Take Quiz</pattern>
 	    <template>
+	        <delay>3</delay>
 	        I'm glad you decided to take our quiz!
 	        <split/>
 	        <random>
-              <li>Let's get started with some questions., </li>
+              <li>Let's get started with some questions, </li>
               <li>Let's go over a couple of questions, </li>
               <li>Follow me along by answering a few questions, </li>
           </random>
           <split/>
-          Do you get frustraded easily when dealing with complex problem?
+          Do you get frustrated easily when dealing with complex problems?
           <reply>
-              <text>I embrace new challenges and enjoy them.</text>
-              <postback>embrace</postback>
+              <text>I embrace new challenges.</text>
+              <postback>Embrace</postback>
           </reply>
           <reply>
-              <text>I can get a bit frustraded, and I can lose confidence.</text>
-              <postback>confidence</postback>
+              <text>I can get a bit frustraded.</text>
+              <postback>Confidence</postback>
           </reply>
 	   </template>
     </category>
     
     <category>
-        <pattern>embrace</pattern>
+        <pattern>Embrace</pattern>
         <template>
             <think><set name="complex">true</set></think>
-            Sweet, Do you like working with other people? 
+            Do you like working with other people? 
             <reply>
-              <text>I believe I do</text>
+              <text>I believe I do!</text>
               <postback>group</postback>
           </reply>
           <reply>
-              <text>I prefer to work alone</text>
-              <postback>alone</postback>
+              <text>I prefer to work alone.</text>
+              <postback>Alone</postback>
           </reply>
         </template>
     </category>
@@ -50,40 +51,40 @@
               <postback>group</postback>
           </reply>
           <reply>
-              <text>I prefer to work alone</text>
-              <postback>alone</postback>
+              <text>I prefer to work alone.</text>
+              <postback>Alone</postback>
           </reply>
         </template>
     </category>
     
     <category>
-        <pattern>group</pattern>
+        <pattern>Group</pattern>
         <template>
             <think><set name="people">true</set></think>
             What do you think about customer service?
             <reply>
-              <text>I prefer no to be involved with customer service</text>
-              <postback>no cs</postback>
+              <text>I prefer not to be involved with customer service.</text>
+              <postback>No CS</postback>
           </reply>
           <reply>
               <text>I love interacting with people.</text>
-              <postback>yes cs</postback>
+              <postback>Yes CS</postback>
           </reply>
         </template>
     </category>
     
      <category>
-        <pattern>alone</pattern>
+        <pattern>Alone</pattern>
         <template>
             <think><set name="people">false</set></think>
-            Do you like dealing with big amoung of data and try to make sense of it?
+            Do you like dealing with big amount of data and try to make sense of it?
             <reply>
-              <text>Yes, I like that</text>
-              <postback>final data scientist</postback>
+              <text>Yes, I like that.</text>
+              <postback>Final data scientist</postback>
           </reply>
           <reply>
               <text>No, I don't like it</text>
-              <postback>no data</postback>
+              <postback>No data</postback>
           </reply>
         </template>
     </category>
@@ -91,7 +92,7 @@
     <category>
         <pattern>no cs</pattern>
         <template>
-            Do you like dealing with big amoung of data and try to make sense of it?
+            Do you like dealing with big amount of data and try to make sense of it?
             <condition name="complex" value="true">
                 <reply>
                     <text>Yes</text>
@@ -105,20 +106,20 @@
             <condition name="complex" value="false">
                 <reply>
                     <text>Yes</text>
-                    <postback>final Database Administrator</postback>
+                    <postback>Final Database Administrator</postback>
                 </reply>
                 <reply>
                     <text>No</text>
-                    <postback>no data</postback>
+                    <postback>No data</postback>
                 </reply>
             </condition>
         </template>
     </category>
     
      <category>
-        <pattern>yes cs</pattern>
+        <pattern>Yes CS</pattern>
         <template>
-            <srai>final Business Analyst</srai>
+            <srai>Final Business Analyst</srai>
         </template>
     </category>
     
@@ -130,33 +131,34 @@
             Maybe help the company beef up their security infrastructure?
             <reply>
                 <text>Yes, that sounds interesting</text>
-                <postback>final Security Analyst</postback>
+                <postback>Final Security Analyst</postback>
             </reply>
             <reply>
                 <text>No, that's no my thing</text>
-                <postback>no security</postback>
+                <postback>No Security</postback>
             </reply>
         </template>
     </category>
     
     <category>
-        <pattern>no security</pattern>
+        <pattern>No Security</pattern>
         <template>
             Last question, have you ever been interested in building things?
             <reply>
                 <text>Yes, I always like that</text>
-                <postback>final Software Developer</postback>
+                <postback>Final Software Developer</postback>
             </reply>
             <reply>
                 <text>No</text>
-                <postback>final Business Analyst</postback>
+                <postback>Final Business Analyst</postback>
             </reply>
         </template>
     </category>
     
      <category>
-        <pattern>final *</pattern>
+        <pattern>Final *</pattern>
         <template>
+            <delay>3</delay>
             Based on the answers you have provided, you would be a great fit for a career as a <star/>.
             <split/>
             Would you be interested in knowing more about this career?
@@ -172,6 +174,17 @@
               <text>I'm good for now. I will go back later.</text>
               <postback>Quit</postback>
           </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Quit</pattern>
+        <template>
+            <delay>3</delay>
+            Thank you for using our WGU IT Advisor Service.
+            <split/>
+            <delay>2</delay>
+            It was a pleasure speaking with you. I hope you have a great day.
         </template>
     </category>
     
